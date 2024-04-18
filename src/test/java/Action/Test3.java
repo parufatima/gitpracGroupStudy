@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Test002 {
+public class Test3 {
 	@Test
 	void browserLaunchTest() {
 		
@@ -20,6 +20,7 @@ public class Test002 {
 
 	        driver.get("https://www.amazon.com/");
 	        driver.manage().window().maximize();
+	        driver.manage().deleteAllCookies();
 		
 	}
 
